@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.road-grid {
+  background:
+    linear-gradient(115deg, transparent 0 26%, rgba(246, 164, 65, 0.24) 26.2%, transparent 26.7%),
+    linear-gradient(65deg, transparent 0 50%, rgba(255, 255, 255, 0.12) 50.2%, transparent 50.8%),
+    radial-gradient(circle at 85% 20%, rgba(246, 207, 75, 0.24), transparent 24%),
+    linear-gradient(135deg, #10233f 0%, #17456f 62%, #f7fbff 180%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
